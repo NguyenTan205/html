@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form lấy survay khách hàng</title>
+    <style>
+      table{
+        border-collapse: collapse;
+        width: 100%;
+        font-family: arial, sans-serif;
+        font-size: 12px;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+      .wufoo{
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+<body>
+  <form>
+    <h3>Market Research Survey</h3>
+    <h6>Please take a few moments to complete this satisfaction survey.</h6>
+    What is your age range?<br>
+    <select>
+      <option value="18-24">18-24</option>
+      <option value="25-34">25-34</option>
+      <option value="35-50">35-50</option>
+      <option value="50+">50+</option>
+    </select><br><br>
+    What is your yearly income range?<br>
+    <select>
+      <option value="&#36;0 - &#36;25,000">&#36;0 - &#36;25,000</option>
+      <option value="&#36;25,001 - &#36;50,000">&#36;25,001 - &#36;50,000</option>
+      <option value="&#36;50,001 - &#36;25,000">&#36;50,001 - &#36;100,000</option>
+      <option value="&#36;100,000+">&#36;100,000+</option>
+    </select><br><br>
+    Gender Identity<br>
+    <input type="radio" name="gender" value="Male">Male<br>
+    <input type="radio" name="gender" value="Female">Female<br><br>
+    Which of the following products have your purchased in the last 2 months. Please check all that apply.<br>
+    <input type="checkbox" name="product" value="product1">Product 1<br>
+    <input type="checkbox" name="product" value="product2">Product 2<br>
+    <input type="checkbox" name="product" value="product3">Product 3<br><br>
+    How often would you use our new product?<br>
+    <input type="radio" name="day" value="daily">Daily<br>
+    <input type="radio" name="day" value="weekly">Weekly<br>
+    <input type="radio" name="day" value="monthly">Monthly<br><br>
+    What would you pay for the new product?<br>
+    &#36;<input type="tel" name="payment" placeholder="Dollars" size="15px"/> .
+    <input type="tel" name="payment" placeholder="Cents" size="3px"/><br><br>
+    What features would you like to see in the new product.<br>
+    <textarea rows="4" cols="50"></textarea><br><br>
+    Please rate your level of agreement with the following statement:<br>
+    <table>
+      <tr class="wufoo">
+        <th></th>
+        <th>Strongly</th>
+        <th>Disgree</th>
+        <th>Agree</th>
+        <th>Strongly agree</th>
+      </tr>
+      <td>our product are priced</td>
+      <td><input type="checkbox" name="product" value="1"><br>1</td>
+      <td><input type="checkbox" name="product" value="2"><br>2</td>
+      <td><input type="checkbox" name="product" value="3"><br>3</td>
+      <td><input type="checkbox" name="product" value="4"><br>4</td>
+      <tr class="wufoo">
+        <td>our product are high</td>
+        <td><input type="checkbox" name="product" value="1"><br>1</td>
+        <td><input type="checkbox" name="product" value="2"><br>2</td>
+        <td><input type="checkbox" name="product" value="3"><br>3</td>
+        <td><input type="checkbox" name="product" value="4"><br>4</td>
+      </tr>
+      <tr>
+        <td>you would recommend</td>
+        <td><input type="checkbox" name="product" value="1"><br>1</td>
+        <td><input type="checkbox" name="product" value="2"><br>2</td>
+        <td><input type="checkbox" name="product" value="3"><br>3</td>
+        <td><input type="checkbox" name="product" value="4"><br>4</td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
