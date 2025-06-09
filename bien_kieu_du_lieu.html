@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h3>Nhập điểm sinh viên</h3>
+  <script>
+    inputvl = prompt("Nhập vào điểm số Vật lí: ");
+    inputhh = prompt("Nhập vào điểm số Hoá học: ");
+    inputsh = prompt("Nhập vào điểm số Sinh học: ");
+    let vl = parseFloat(inputvl);
+    let hh = parseFloat(inputhh);
+    let sh = parseFloat(inputsh);
+    let tb = (vl + hh + sh) / 3;
+    let ces = vl + hh + sh;
+    document.write('Giá trị TB là: ' + tb);
+    document.write('Giá trị tổng là: ' + ces);
+  </script> <br><br>
+  <h3>Đổi độ C sang độ F</h3>
+  <script>
+    inputC = prompt("Nhập vào độ C: ");
+    let C = parseInt(inputC);
+    let F = C * 9 / 5 + 32;
+    document.write('Độ F là: ' + F);
+  </script>
+
+  <h3>Diện tích hình tròn</h3>
+  <script>
+    inputR = prompt("Nhập vào giá trị bán kính R: ");
+    let R = parseFloat(inputR);
+    let area = 3.14 * R * R;
+    document.write('Area = ' + area);
+  </script>
+
+  <h3>Chu vi hình tròn</h3>
+  <script>
+    inputR = prompt("Nhập vào bán kính R: ");
+    let R = parseFloat(inputR);
+    let chuvi = 3.14 * 2 * R;
+    document.write('Chu vi hình tròn là: ' + chuvi);
+  </script>
+
+</body>
+</html>
